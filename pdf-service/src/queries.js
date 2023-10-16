@@ -58,7 +58,7 @@ export const getFileStoreIds = (
     if (error) {
       logger.error(error.stack || error);
       callback({
-        status: 400,
+        status: 500,
         message: `error occured while searching records in DB : ${error.message}`
       });
     } else {
